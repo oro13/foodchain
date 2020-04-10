@@ -2,7 +2,75 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 import pandas as pd
 from src.dw import *
+import json
+import plotly.express as px
 
+
+def wheat_bar_plot(county_drought, name):
+    df = county_drought.copy()
+    df.reset_index(inplace=True)
+    df['Year'] = pd.DatetimeIndex(df['MapDate']).year
+    df = df.groupby(['Year']).mean()
+
+    df2 = wheat_yield.loc[wheat_yield['County'] == name]
+    d = df.merge(df2, on='Year')
+    good_data = d[['Year', 'any_drought', 'Value']]
+
+    df = good_data
+    fig = px.bar(df, x='Year', y='Value',
+                 labels={'Value':'Yield (Bushels per Acre)', 'any_drought' : 'Percent of Land in Drought'},
+                 title=f'Wheat Yield in {name.title()} County', 
+                 color='any_drought',
+                )
+    fig.show()
+    
+def wheat_time_plot(name):
+    
+    county = name.title()
+    fig = county_crop_helper(wheat_yield_not_irr, grant_drought, name, "Wheat (Not Irrigated)", "Wheat Yield (Bushel / Acre)")
+
+
+    df2 = wheat_yield_irr.loc[wheat_yield_irr['County'] == name]
+    fig.add_trace(
+            go.Scatter(x=df2.Year, y=df2['Value'], name="Wheat (Irrigated)", 
+                      line = dict(dash='dot')),
+            secondary_y=True,
+            )
+
+    df3 = wheat_yield.loc[wheat_yield['County'] == name]
+    fig.add_trace(
+            go.Scatter(x=df3.Year, y=df3['Value'], name="Wheat", 
+                      line = dict(dash='dot')),
+            secondary_y=True,
+            )
+
+
+    fig.update_layout(xaxis_range=['2000-01-01','2007-01-01'],
+                      title_text=f"Wheat Yield in {county} County"
+                         )
+    fig.show()
+
+
+def plot_map(df):
+    # Consectuive Weeks of Moderate Drought (Level D1) in 2000-2010
+    df['FIPS'] = df['FIPS'].astype(str)
+
+    counties = json.loads(open('data/geojson-counties-fips.json').read())
+
+    fig = go.Figure(go.Choroplethmapbox(geojson=counties, locations=df.FIPS, z=df.ConsecutiveWeeks,
+                                        colorscale="Viridis", zmin=0, zmax=12,
+                                        marker_opacity=0.5, marker_line_width=0,
+                                        text=df.County,
+
+                                       ))
+    fig.update_layout(mapbox_style="carto-positron",
+                      mapbox_zoom=6, mapbox_center = {"lat":  47.5, "lon": -120.740135})
+    fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
+
+    fig.show()
+    
+    
 
 def plot_any_drought(df):
     fig = (px.line(df, x=df.index, y='any_drought', 

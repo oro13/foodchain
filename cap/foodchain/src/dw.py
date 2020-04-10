@@ -24,6 +24,25 @@ okanogan_drought = county_drought(wa_county_tot_dry, 'Okanogan County') #1.23 mi
 lincoln_drought = county_drought(wa_county_tot_dry, 'Lincoln County') #1.2 mil acres of farmland
 grant_drought = county_drought(wa_county_tot_dry, 'Grant County') #1 mil acres of farmland
 
+d1 = pd.read_csv('data/wa_4_week_d1.csv')
+d2 = pd.read_csv('data/wa_4_week_d2.csv')
+d3 = pd.read_csv('data/wa_4_week_d3.csv')
+
+wheat_yield = pd.read_csv('data/wheat_yield.csv')
+wheat_yield_not_irr = pd.read_csv('data/wheat_yield_not_irr.csv')
+wheat_yield_irr = pd.read_csv('data/wheat_yield_irr.csv')
+
+
+def year_drought_describe(county_drought):
+    df = county_drought.copy()
+    df.reset_index(inplace=True)
+    df['Year'] = pd.DatetimeIndex(df['MapDate']).year
+    df = df.groupby(['Year']).mean()
+    df.reset_index(inplace=True)
+    return df[['D0', 'D1', 'D2', 'D3', 'D4']].describe()
+    
+def wheat_describe(name):
+    return wheat_yield.loc[wheat_yield['County'] == name]['Value'].describe()
 
 
 # # groups county df by year and sums drought percentages
