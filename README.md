@@ -47,19 +47,19 @@ Hypothesis (Null):
     
 <p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_grant.png" alt="Grant County Drought Means">
-        <h1>Grant County Drought Periods </h1> </p>
+        <h3>Grant County Drought Periods </h3> </p>
 <p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_lincoln.png" alt="Lincoln County Drought Means">
-        <h1>Lincoln County Drought Periods </h1> </p>
+        <h3>Lincoln County Drought Periods </h3> </p>
 <p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_okanogan.png" alt="Okanogan County Drought Means">
-        <h1>Okanogan County Drought Periods </h1> </p>
+        <h3>Okanogan County Drought Periods </h3> </p>
 <p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_whitman.png" alt="Whitman County Drought Means">
-       <h1> Whitman County Drought Periods </h1> </p>
+       <h3> Whitman County Drought Periods </h3> </p>
 <p style="float: middle; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_yakima.png" alt="Yakima County Drought Means">
-        <h1>Yakima County Drought Periods </h1>
+        <h3>Yakima County Drought Periods </h3>
 </p>
 
 # Wheat Yields in Key Agrarian Counties
