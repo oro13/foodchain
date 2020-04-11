@@ -45,19 +45,19 @@ Hypothesis (Null):
 # Drought Levels in Key Agrarian Counties
 
     
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_grant.png" alt="Grant County Drought Means">
         Grant County Drought Periods </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_lincoln.png" alt="Lincoln County Drought Means">
         Lincoln County Drought Periods </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_okanogan.png" alt="Okanogan County Drought Means">
         Okanogan County Drought Periods </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_whitman.png" alt="Whitman County Drought Means">
         Whitman County Drought Periods </p>
-<p style="float: middle; font-size: 9pt; text-align: middle; center: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: middle; font-size: 9pt; text-align: left; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/year_mean_yakima.png" alt="Yakima County Drought Means">
         Yakima County Drought Periods 
 </p>
@@ -66,19 +66,19 @@ Hypothesis (Null):
 
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/wheat_yield_grant.png" alt="Grant County Wheat Yield">
-        Grant County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/wheat_yield_lincoln.png" alt="Lincoln County Wheat Yield">
-        Lincoln County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/wheat_yield_okanogan.png" alt="Okanogan County Wheat Yield">
-        Okanogan County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/wheat_yield_whitman.png" alt="Whitman County Wheat Yield">
-        Whitman County Wheat Yield </p>
+        </p>
 <p style="float: middle; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/wheat_yield_yakima.png" alt="Yakima County Wheat Yield">
-        Yakima County Wheat Yield 
+        
 </p>
         
         
@@ -86,17 +86,17 @@ Hypothesis (Null):
 
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_grant.png" alt="Grant County Wheat Yield">
-        Grant County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_lincoln.png" alt="Lincoln County Wheat Yield">
-        Lincoln County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_okanogan.png" alt="Okanogan County Wheat Yield">
-        Okanogan County Wheat Yield </p>
+        </p>
 <p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_whitman.png" alt="Whitman County Wheat Yield">
-        Whitman County Wheat Yield </p>
+        </p>
 <p style="float: middle; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_yakima.png" alt="Yakima County Wheat Yield">
-        Yakima County Wheat Yield 
+        
 </p>
