@@ -84,19 +84,19 @@ Hypothesis (Null):
         
 # Overview of Key Agrarian Counties
 
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: center; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_grant.png" alt="Grant County Wheat Yield">
         </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: center; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_lincoln.png" alt="Lincoln County Wheat Yield">
         </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: center; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_okanogan.png" alt="Okanogan County Wheat Yield">
         </p>
-<p style="float: left; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: left; font-size: 9pt; text-align: center; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_whitman.png" alt="Whitman County Wheat Yield">
         </p>
-<p style="float: middle; font-size: 9pt; text-align: center; width: 40%; margin-right: 1%; margin-bottom: 0.5em;">
+<p style="float: middle; font-size: 9pt; text-align: center; width: 100%; margin-right: 1%; margin-bottom: 0.5em;">
         <img src="county/img/ts_yakima.png" alt="Yakima County Wheat Yield">
         
 </p>
